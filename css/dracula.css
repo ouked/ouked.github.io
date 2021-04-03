@@ -10,7 +10,9 @@ body * {
 }
 
 a,
-a * {
+a *,
+a:visited,
+a:visited * {
 	color: rgba(80, 250, 123, 1) !important;
 	background-color: transparent !important;
 }
@@ -29,11 +31,6 @@ div[onclick]:hover,
 .link:hover,
 .link:hover * {
 	color: rgba(241, 250, 140, 1) !important;
-}
-
-a:visited,
-a:visited * {
-	color: rgba(98, 114, 164, 1) !important;
 }
 
 h1,

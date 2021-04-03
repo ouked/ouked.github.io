@@ -94,7 +94,7 @@ a:hover {
   color: #787878;
   font-weight: 600;
   text-align: center;
-  font-family: "Courier New", monospace;
+  font-family: Monaco, "Courier New", monospace;
   margin-top: 0.5em;
   display: block;
   text-transform: lowercase;
