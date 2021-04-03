@@ -103,3 +103,6 @@ a.active *,
 	color: rgba(139, 233, 253, 1) ;
 }
 
+.highlight {
+	background-color: rgba(40, 42, 54, 1) ;
+}
