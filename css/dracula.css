@@ -9,13 +9,12 @@ body * {
 	/*background-color: rgba(40, 42, 54, 1) ;*/
 }
 
-a,
-a *,
 strong
- {
+{
 	color: rgba(80, 250, 123, 1) ;
 	background-color: transparent ;
 }
+
 
 a:hover,
 a:hover *,
@@ -91,6 +90,8 @@ li {
 	background-image: none ;
 }
 
+a,
+a *,
 a.highlight,
 a.highlight *,
 a.active,
