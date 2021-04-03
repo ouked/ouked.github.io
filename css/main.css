@@ -278,6 +278,13 @@ a:hover {
   opacity: 0.7;
 }
 
+.social-icons{
+  font-size: 30px;
+}
+
+.footer{
+  text-align: center;
+}
 /*****************************************************************************/
 /*
 /* Colophon
