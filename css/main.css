@@ -51,6 +51,7 @@ a:hover {
 #logo {
   max-width: 128px;
   border-radius: 10%;
+  margin-bottom: 25px;
 }
 
 .posts a {
