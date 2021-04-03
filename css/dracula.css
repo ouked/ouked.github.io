@@ -11,16 +11,14 @@ body * {
 
 a,
 a *,
-a:visited,
-a:visited * {
+strong
+{
 	color: rgba(80, 250, 123, 1) ;
 	background-color: transparent ;
 }
 
 a:hover,
 a:hover *,
-a:visited:hover,
-a:visited:hover *,
 span[onclick]:hover,
 div[onclick]:hover,
 [role="link"]:hover,
@@ -39,7 +37,6 @@ h3,
 h4,
 h5,
 h6,
-strong,
 [id*="headline"],
 [class*="headline"],
 [id*="header"],
