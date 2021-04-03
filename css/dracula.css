@@ -12,13 +12,15 @@ body * {
 a,
 a *,
 strong
-{
+ {
 	color: rgba(80, 250, 123, 1) ;
 	background-color: transparent ;
 }
 
 a:hover,
 a:hover *,
+a:visited:hover,
+a:visited:hover *,
 span[onclick]:hover,
 div[onclick]:hover,
 [role="link"]:hover,
@@ -93,6 +95,8 @@ a.highlight,
 a.highlight *,
 a.active,
 a.active *,
+a:visited,
+a:visited *,
 .selected,
 .selected *,
 [href="#"] {
