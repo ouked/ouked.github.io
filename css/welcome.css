@@ -4,6 +4,7 @@
 
 .column {
     flex: 50%;
+    margin-right: 120px;
 }
 
 #portrait {
