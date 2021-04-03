@@ -1,11 +1,7 @@
 ---
-layout: post
-title: Home
+layout: default
+title: Welcome
 ---
-
-# _Alexander S. Dawkins_
-
-[📸](https://instagram.com/cost.and.inconvenience)
 
 ## About me
 
