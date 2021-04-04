@@ -1,9 +1,4 @@
-# ouked.github.io
-
-Personal website.
-
-
-
+# Personal website 
 
 Powered by [Jekyll](http://jekyllrb.com) and GitHub pages.
 
