@@ -1,6 +1,5 @@
-# ouked.github.io
+# Personal website 
 
-Personal website.
+Powered by [Jekyll](http://jekyllrb.com) and GitHub pages.
 
-
-[Flex](https://github.com/the-development/flex) theme, powered by [Jekyll](http://jekyllrb.com). 
+Theme: [Flex](https://github.com/the-development/flex).
