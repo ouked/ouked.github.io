@@ -3,4 +3,8 @@
 Personal website.
 
 
-[Flex](https://github.com/the-development/flex) theme, powered by [Jekyll](http://jekyllrb.com). 
+
+
+Powered by [Jekyll](http://jekyllrb.com) and GitHub pages.
+
+Theme: [Flex](https://github.com/the-development/flex).
