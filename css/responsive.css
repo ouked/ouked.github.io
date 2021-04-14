@@ -64,9 +64,9 @@
   }
 
   .sidebar {
-    transition: 1s;
+    transition: 0.25s ease-in-out;
     position: absolute;
-    margin-left: -100%;
+    margin-left: -50%;
     z-index: 3;
     width: 35%;
     padding-left: 1.75em;
@@ -82,6 +82,7 @@
     font-size: 10vw;
     display: block;
     z-index: 2;
+    touch-action: manipulation;
   }
 
   #close-sidebar {
@@ -119,5 +120,5 @@
 /*****************************************************************************/
 
 .slideIn {
-  margin-left: 0%;
+  margin-left: 0;
 }
