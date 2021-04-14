@@ -32,6 +32,7 @@ also stream video so that users can see where they're going. We decided our serv
 in Python, and the frontend would be written in React.
 
 ![Picture of the RC cars](/images/duck_driver/trucks.jpg)
+
 We bought two remote controlled trucks, in case we broke one (we did), and a soft duck toy. 
 
 ## Part 2: The First 10 Hours

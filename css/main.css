@@ -167,7 +167,7 @@ img#cover-photo {
 }
 
 .post img {
-  max-width: 50vw;
+  width: 100%;
 }
 .post a,
 #about a {
