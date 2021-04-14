@@ -236,13 +236,13 @@ def __deepcopy__(self, memodict={}):
     cls = self.__class__
     state = cls.__new__(cls)
 
-    // Copy old values to new values
+    # Copy old values to new values
     state.foo = self.foo
 
-    // For lists and sets, we have to copy the values to new objects
+    # For lists and sets, we have to copy the values to new objects
     state.bar = [item for item in self.bar]
 
-    // ...
+    # ...
 
     return state
 ```
