@@ -54,14 +54,6 @@ a:hover {
   margin-bottom: 25px;
 }
 
-.posts a {
-  color: #444;
-}
-
-.posts a:hover {
-  color: #777;
-}
-
 .posts-list {
   list-style-type: none;
 }
@@ -141,6 +133,8 @@ a:hover {
 
 img#cover-photo {
   max-height: 500px;
+  max-width: 50vw;
+  margin-top: 2vw;
 }
 
 #info-container {
@@ -166,7 +160,15 @@ img#cover-photo {
   margin-left: -0.5em;
   margin-bottom: 1.25em;
 }
+.post h1 {
+  margin-top: 1.25em;
+  margin-left: -0.5em;
+  margin-bottom: 1.25em;
+}
 
+.post img {
+  max-width: 50vw;
+}
 .post a,
 #about a {
   border-bottom: 1px solid #8085C1;
