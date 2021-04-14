@@ -50,7 +50,7 @@
 /**
  * iPhone width
  **/
-@media (max-width:1130px) {
+@media only screen and (hover: none) and (pointer: coarse) {
   #logo {
     max-width: 75px;
   }
