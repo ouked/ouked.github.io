@@ -270,6 +270,7 @@ img#cover-photo {
   text-transform: uppercase;
 }
 
+#close-sidebar,
 #sidebar-button {
   height: intrinsic;
   cursor: pointer;
