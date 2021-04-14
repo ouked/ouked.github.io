@@ -1,7 +1,19 @@
+plugins:
+  - jekyll-seo-tag
+
 name: Alex S. Dawkins
 logo: https://github.com/ouked.png
 tagline: is this thing on?
+description: A personal website for writing about previous projects.
+url: alexdawkins.io
+author: Alex S. Dawkins
+locale: en_GB
 github: https://github.com/ouked
 email: mailto:asd60@bath.ac.uk?subject=Enquiry%20(Personal%20Website)
 linkedin: https://www.linkedin.com/in/alexsdawkins/
 github_username: ouked
+social:
+  name: Alex Dawkins
+  links:
+    - https://www.linkedin.com/in/alexsdawkins/
+    - https://github.com/ouked
