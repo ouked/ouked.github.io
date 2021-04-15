@@ -117,6 +117,7 @@ Selecting row `A`, and doing this described reduction leads to the reduced matri
 | C   | 1 | 0 | 0 | 0 |
 | D   | 0 | 1 | 1 | 1 |
 
+
 `Solution = {A}`
 
 - Row `A` was removed and **added to our solution**.

@@ -12,7 +12,7 @@ tags: python hackathons react hardware
 
 
 
-**We won the "Most Impressive" award, and were voted 2nd in the "Hacker's Choice" category!** Sergios, Luke, Joe and I
+We won the **"Most Impressive" award**, and were **voted 2nd in the "Hacker's Choice"** category! Sergios, Luke, Joe and I
 worked so hard and I'm extremely proud of us, especially as none of us had any real electronics experience, other than 
 A-Level physics. 
 
@@ -132,8 +132,8 @@ exactly how to drive an RC car with a Raspberry Pi, using only the electronics w
 ## Part 4: The Breakthrough
 
 It turns out my original plan of jumping the buttons using the Raspberry Pi's GPIO pins was exactly how you would do it,
-we just needed a 1k+ Ω resistor attached to the grounding connection! Using a different, working Raspberry Pi,
-Joe started driving the car from the terminal, and we soon had the camera attached. 
+**we just needed a 1k+ Ω resistor attached to the grounding connection**, to reduce the current to the radio transmitter chip.
+Using a different, working Raspberry Pi, Joe started driving the car from the terminal, and we soon had the camera attached. 
 
 ![First demo GIF](/images/duck_driver/first_demo.gif)
 
@@ -155,6 +155,72 @@ version numbers due to the Raspberry Pi not supporting the latest build, but it 
 I was relieved to have
 helped my team in the same way they had helped me. Although nobody was keeping score, I was happy to have put back in what
 I had gotten out; I suddenly felt a lot less guilty about not being able to get the hardware to work.
+
+### How it worked
+
+The server would add new connections to a queue. 
+Only the person at the front of this queue could control the duck, and when their turn was over, they were moved to the 
+back. The time-keeping was done by the `Timer` class from the `threading` built-in module. (A different
+thread was needed so that the server could do other things while it was waiting to move someone).
+
+```python
+t = Timer(turn_length, next_person)
+
+@sio.on('connect')
+def on_connect(sid, environ):
+    print("connect", sid)
+    if len(queue) == 0:
+        print("First person connected, starting their turn...")
+        t.start()
+    queue.append(sid)
+    print(queue)
+    sio.emit('queue', {"queue": queue})
+
+def next_person():
+    print("Next turn...")
+    person = queue.pop(0)
+
+    # Stop the car
+    sio.emit('clear', {})
+
+    queue.append(person)
+    print(queue)
+
+    sio.emit('queue', {"queue": queue})
+    t.start()
+```
+
+Move commands were received from and sent to all clients, as the Raspberry Pi was connected like a user, except it was
+the only one to react to move commands. Only commands sent from the person at the front of the queue were re-emitted. 
+
+```python
+@sio.on('move')
+def move(sid, data):
+    print(data)
+    if sid == queue[0]:
+        print("Validated")
+        sio.emit('move', data)
+    else:
+        print("Denied.")
+```
+
+The code running on the hardware simply set the GPIO pins to be high by running the functions it was told to. Python 3.8
+doesn't have switch-case statements ([yet](https://pakstech.com/blog/python-switch-case/)), so the code actually blindly
+executed anything it was sent, after appending `()` to it. This means that we only had to send the name of a move (such
+as `F` for **forward**), and the code will call the `F()` function.
+
+```python
+@sio.on("move")
+def move(data):
+    exec(data[1] + "()")
+```
+
+ **This is obviously an awful idea**: there are no checks throughout the system
+for injection attacks (or anything). But this was a hackathon, and we were very short of time. If we continue to develop this
+code, this is one of the first things that will be fixed. 
+
+
+
 
 ## Part 5: Presentation
 
@@ -195,6 +261,7 @@ and generally tidy it up.
 be used to mark boundaries that the duck can't cross, to prevent it going in roads or into the campus lake. A map showing
 where the duck had been would also be really interesting.
 
+- **Add security**: there are currently **NO** security considerations 
 
 ## Closing Thoughts
 
