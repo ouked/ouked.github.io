@@ -47,7 +47,15 @@ decided to move onto trying to move the motors directly with the Raspberry Pi.
 learnt this at the cost of frying mine after the car was in bits from trying to expose the motors. We should have been
 using a motor driver ([such as this one](https://thepihut.com/products/l298n-motor-stepper-driver)), but we didn't have 
 one, and the shops were closed. We did find a chip inside the car (MX1919), but we couldn't find a datasheet for it 
-anywhere, or figure out how to use it. 
+anywhere, or figure out how to use it.
+
+I ended up **breaking my Raspberry Pi**, and it no longer works. I'm not exactly sure what broke it, but it could be any
+(combination) of the following:
+
+- I shorted the negative and +3.3V pins
+- I shorted the negative and +5V pins 
+- I tried to draw too much current ([more than 50mA](https://elinux.org/RPi_Low-level_peripherals#Power_pins))
+- Anything else: I was being careless
 
 At this point I was **frustrated** and **embarrassed**: I had told my team that I could do this, they
 had invested their own time and money into this idea, and I was failing. 
