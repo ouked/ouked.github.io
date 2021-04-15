@@ -78,7 +78,8 @@ a:hover {
 .title {
   display: inline-block;
   text-align: center;
-  line-height: 25px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .tagline {
