@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Duck Driver - Bath Hack 2021 "Most Impressive" Winner
+title: Duck Driver - Bath Hack 2021 Winner
 description: A remote-controlled duck that can be watched and controlled from a website
 image: /images/duck_driver/duck_head.png
 cover: duck_driver/duck_driver.png
