@@ -322,6 +322,10 @@ img#cover-photo {
 .footer{
   text-align: center;
 }
+
+.footer-link{
+  line-height: 1;
+}
 /*****************************************************************************/
 /*
 /* Colophon
