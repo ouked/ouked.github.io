@@ -5,7 +5,7 @@ name: Alex S. Dawkins
 logo: https://github.com/ouked.png
 tagline: is this thing on?
 description: A personal website for writing about previous projects.
-url: alex-dawkins.com
+url: https://alex-dawkins.com
 author: Alex S. Dawkins
 locale: en_GB
 github: https://github.com/ouked
@@ -17,3 +17,4 @@ social:
   links:
     - https://www.linkedin.com/in/alexsdawkins/
     - https://github.com/ouked
+cv: files/Alex Dawkins CV.pdf
