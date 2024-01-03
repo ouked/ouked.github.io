@@ -2,9 +2,12 @@
 layout: post
 title: Increasing Cache Hit Ratio on AWS CloudFront for Dynamic Content
 date:   2024-01-03 16:00:00
+image: /images/duck_driver/duck_head.png
 categories: posts
 tags: aws cloud
 ---
+
+> "A picture of a caching system working well. Efficiency, green and speed"
 
 When configured correctly, AWS CloudFront can be used to reduce compute required to serve requests. To increase the efficiency (cache hit ratio) of CloudFront, let's review its configuration.
 
