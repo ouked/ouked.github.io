@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Increasing Cache Hit Ratio on AWS CloudFront for Dynamic Content
+description: A quick look at how we can configure AWS's CDN CloudFront to increase the cache hit ratio.
 date:   2024-01-03 16:00:00
+cover: cache.jfif
 image: /images/cache.jfif
 categories: posts
 tags: aws cloud
