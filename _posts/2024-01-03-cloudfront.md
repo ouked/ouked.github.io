@@ -2,7 +2,7 @@
 layout: post
 title: Increasing Cache Hit Ratio on AWS CloudFront for Dynamic Content
 date:   2024-01-03 16:00:00
-image: /images/duck_driver/duck_head.png
+image: /images/cache.jfif
 categories: posts
 tags: aws cloud
 ---
