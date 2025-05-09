@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Escaping the SES Sandbox: An Adventure in Sunk Costs
+title: "Escaping the SES Sandbox: An Adventure in Sunk Costs"
 description: A light-hearted review of why I got rejected from SES production access.
 image: 
 cover: ses.png
@@ -9,9 +9,7 @@ categories: posts
 tags: aws cloud
 ---
 
-I've been working on a personal project recently, and it relies on email for user interface.
-
-# Table of Contents
+## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Why use Emails for User Interface?](#why-use-emails-for-user-interface)
   - [Onboarding](#onboarding)
@@ -37,6 +35,8 @@ I've been working on a personal project recently, and it relies on email for use
 - [Appendix](#appendix)
   - [Terms of Service](#terms-of-service)
   - [Privacy Policy](#privacy-policy)
+
+I've been working on a personal project recently, and it relies on email for user interface. This post outlines why I have chosen to use emails, the Simple Email Service application process, and how I changed my request to hopefully gain Simple Email Service Production Access.
 
 # Why use Emails for User Interface? 
 
@@ -95,7 +95,7 @@ For reference, here is my message:
 > I'm working on a small personal project which allows users to upload their
 > images and view a journey map from the image locations in a front end
 > written in React. To upload their images, they email 
-> "<redacted>" with their photos and potentially some extra
+> "[REDACTED]" with their photos and potentially some extra
 > data, which triggers a chain of events ending with a JSON file that
 > describes their journey from photo. This is a small project and for both
 > maintainability and cost, I want this to only be available to emails on an
@@ -160,23 +160,20 @@ Asking everybody's favourite probably-not-conscious AI assistant prompted the fo
 > 
 > **Key Areas to Improve**:
 > 1. Explicit mention of opt-in and unsubscribe processes:
-> 
-> - AWS wants confirmation that you're following email best practices.
-> 
-> - Even though it’s friends-only, AWS still expects clear unsubscribe handling and consent.
+>   - AWS wants confirmation that you're following email best practices.
+>   - Even though it’s friends-only, AWS still expects clear unsubscribe handling and consent.
 > 
 > 2. Use of formal tone and terminology:
-> 
-> - Terms like "transactional email," "opt-in," "unsubscribe process," and "anti-spam compliance" should appear explicitly.
-> 3. Clear SES usage scope:
-> 
+>   - Terms like "transactional email," "opt-in," "unsubscribe process," and "anti-spam compliance" should appear explicitly.
+>
+> 3. Clear SES usage scope: 
 > - Clarify that you’ll only use SES for transactional notifications, not marketing or bulk sends.
 
 Aside from the much appreciated compliment for the quality of my writing, this response highlights the importance of keywords, and the idea of following email best-practices. But how will I know what AWS deems "best practice"?
 
 ## "Best practices for sending email using Amazon SES" - A developer guide by Amazon Web Services
 
-https://docs.aws.amazon.com/ses/latest/dg/best-practices.html
+[You can read the documentation here.](https://docs.aws.amazon.com/ses/latest/dg/best-practices.html)
 
 I'm often pleasantly surprised by the quality and quantity of AWS documentation, and this isn't an exception. I should have done this first, instead of wasting the support team's time.
 
@@ -340,10 +337,11 @@ From various posts complaining about the same issues as mean
 
 > [IridescentKoala](https://www.reddit.com/r/aws/comments/1fodccu/comment/lophh2r)
 > In my experience it is very common to get denied on the first try. Just provide as much detail as possible when responding.
-> 
+
+
 ### Elsewhere
 
-> https://sendune.com/pages/move-out-of-aws-ses-sandbox-and-get-production-access
+> [Sendune](https://sendune.com/pages/move-out-of-aws-ses-sandbox-and-get-production-access)
 > Choose the type of emails you want to send, 'Marketing' or 'Transactional'. Enter the same domain that you have entered earlier. Accept terms and submit request. It is VERY IMPORTANT that the domain you enter here have an active website that showcases the nature of your business. AWS might reject your request if you do not have a website or just have a generic landing page.
 > [...]
 > That's it. You can sit back and relax. If everything is in order AWS will move your SES account into production and you will be able to send emails. It might take upto a day before AWS grants your request. Occasionally AWS might send you an email asking for more details. Reply with as much detail as possible. You must be able to convince AWS that you are a genuine email sender.
@@ -388,7 +386,7 @@ With the following improvements, I will write my response:
 > 
 > Thank you for taking the time to review my application.
 > 
-> I'm currently developing a small, personal project called <redacted>, which allows users to upload their travel photos and view a map-based visualisation of their journey. This is a low-volume, friends-only application designed for personal use and experimentation. Users interact with the system by emailing <redacted> with their photos and optional metadata. This triggers a backend process that generates a JSON file describing their journey, which is then used to render the map-based frontend in React.
+> I'm currently developing a small, personal project called [REDACTED], which allows users to upload their travel photos and view a map-based visualisation of their journey. This is a low-volume, friends-only application designed for personal use and experimentation. Users interact with the system by emailing [REDACTED] with their photos and optional metadata. This triggers a backend process that generates a JSON file describing their journey, which is then used to render the map-based frontend in React.
 > 
 > Once processing is complete, I send a transactional email to the sender’s address with a link to view their journey. This is not a marketing or promotional email — it is purely transactional and directly initiated by the user’s action.
 > 
@@ -430,10 +428,10 @@ I have included the following as references only - I take no responsibility for 
 
 > **Effective Date**: 09/05/2025
 > 
-> By using the <redacted> service (the "Service"), you agree to be bound by these Terms of Service (the "Agreement"). If you do not agree with these terms, you must not use the Service.
+> By using the [REDACTED] service (the "Service"), you agree to be bound by these Terms of Service (the "Agreement"). If you do not agree with these terms, you must not use the Service.
 > 
 > #### 1. **Description of the Service**
-> <redacted> is a personal project that allows users to upload images and view a journey map based on the location data from the images. The Service is available exclusively to invited individuals (friends and family) and is for personal, non-commercial use only.
+> [REDACTED] is a personal project that allows users to upload images and view a journey map based on the location data from the images. The Service is available exclusively to invited individuals (friends and family) and is for personal, non-commercial use only.
 > 
 > #### 2. **User Responsibilities**
 > - You must provide accurate and truthful information when using the Service.
@@ -474,14 +472,14 @@ I have included the following as references only - I take no responsibility for 
 > #### 12. **Contact Information**
 > If you have any questions about these Terms of Service, please contact us at:
 >
-> Email: <redacted>
+> Email: [REDACTED]
 
 
 
 ## Privacy Policy
 > **Effective Date**: 09/05/2025
 > 
-> This Privacy Policy explains how <redacted> (the "Service") collects, uses, and protects your personal information when you interact with the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.
+> This Privacy Policy explains how [REDACTED] (the "Service") collects, uses, and protects your personal information when you interact with the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.
 > 
 > #### 1. **Information We Collect**
 > We collect the following types of personal information:
@@ -537,4 +535,4 @@ I have included the following as references only - I take no responsibility for 
 > #### 13. **Contact Information**
 > If you have any questions about this Privacy Policy or how we handle your personal information, please contact us at:
 > 
-> - **Email**: <redacted>
+> - **Email**: [REDACTED]

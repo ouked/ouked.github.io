@@ -70,6 +70,10 @@
     z-index: 3;
     width: 35%;
     padding-left: 1.75em;
+    overflow-y: auto; /* Allow scrolling on mobile */
+    max-height: 100vh; /* Limit height to viewport height */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    overscroll-behavior: contain; /* Prevent scroll chaining to main page */
   }
 
   .content {

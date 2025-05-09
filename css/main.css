@@ -1,3 +1,54 @@
+/**/
+/* Tweaks
+/**/
+
+blockquote {
+  border-left: 5px solid #8085C1;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+}
+
+blockquote + blockquote {
+  margin-top: 3em;
+}
+
+blockquote p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  text-align: left !important;
+}
+
+blockquote strong {
+  color: rgba(248, 248, 242, 1)
+}
+
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4 {
+  color: rgba(248, 248, 242, 1);
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-top: 1.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+}
+
+h1, h2 {
+  font-size: 2.5em;
+}
+h3, h4, h5, h6 {
+  font-size: 2em;
+  margin-left: 2vw;
+  margin-top: 3em;
+}
+
+.post a {
+  text-align: justify;
+}
+
 /*****************************************************************************/
 /*
 /* Common
@@ -21,7 +72,7 @@ body {
   font-family: 'Raleway', Arial, sans-serif;
   font-weight: 400;
   font-size: 0.85em;
-  overflow: hidden;
+  overflow: visible;
 }
 
 a {
@@ -218,13 +269,13 @@ img#cover-photo {
 .post p {
   /*font-family: 'Source Sans Pro', Arial, sans-serif;*/
   font-size: 17px;
-  margin-bottom: 1.45em;
+  margin-top: 1.45em;
   text-align: justify;
 }
 
 .post ul, .post ol {
   margin-left: 2.35em;
-  margin-bottom: 1.25em;
+  font-size: 17px;
 }
 
 .post code {
@@ -257,9 +308,8 @@ img#cover-photo {
 .sidebar,
 .content {
   vertical-align: top;
-  height: 100%;
+  min-height: 100%;
   -webkit-overflow-scrolling: touch;
-  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -269,10 +319,12 @@ img#cover-photo {
   padding-left: 11em;
   padding-right: 2.125em;
   border-right: 1px solid #e7e7e7;
+  overflow-y: hidden;
 }
 
 .content {
   padding-left: 2.125em;
+  overflow-y: visible;
 }
 
 .header {
