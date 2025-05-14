@@ -9,6 +9,10 @@ categories: posts
 tags: aws cloud
 ---
 
+> **Update 14/05/2025**
+>
+> AWS have approved production SES for my account! [More information after the conclusion](#update---14052025).
+
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Why use Emails for User Interface?](#why-use-emails-for-user-interface)
@@ -32,6 +36,7 @@ tags: aws cloud
     - [Takeaways](#takeaways-2)
 - [My response](#my-response)
 - [Conclusion](#conclusion)
+- [Update - 14/05/2025](#update---14052025)
 - [Appendix](#appendix)
   - [Terms of Service](#terms-of-service)
   - [Privacy Policy](#privacy-policy)
@@ -412,13 +417,66 @@ With the following improvements, I will write my response:
 > Sincerely,  
 > Alex Dawkins
 
-I will also include the following Terms of Service and Privacy Policy on my website.
+I will also include the Terms of Service and Privacy Policy in the appendix on my website.
 
 # Conclusion
 
 So, in order to avoid using a pesky SSO provider, I have learnt about how email reputation works, anti-abuse best practices, and written 2 legal documents. 
 
 Hopefully I will be able to use SES in the future for other projects to amortise the effort required to reduce my efforts. I will submit the above to AWS and update this page with their response. If you have found this page while trying to solve your own SES woes - good luck, and feel free to reach out: alexander (dot) dawkins (at) gmail (dot) com.
+
+# Update - 14/05/2025
+
+After sending the updated message, I was rejected with a similar message to before! I couldn't believe it.
+
+I sent the following message asking for clarification. 
+
+> Hi 
+>
+> Thank you for your response.
+>
+> I don't understand why my use case is problematic - these are transactional emails that are requested by the user by using my service. Could you explain how this use case is different from say a Password reset request? In both cases, the user performs an action, and receives a transactional email back. I have reviewed the AWS SES Best Practices documentation and can't see anything that this use case goes against. Any indication would be appreciated.
+>
+> Thanks again
+>
+> Alex
+
+As the first rejection message said that they were unable to provide more information, I was doubtful that this would lead to any useful feedback. 
+
+After a few days, I received this message
+
+> Hello,
+> 
+> This case was escalated for a secondary review. We appreciate your patience while we have reviewed your case.
+> 
+> Your new sending quota is 50,000 messages per day. Your maximum send rate is now 14 messages per second. We have also moved your account out of the Amazon SES sandbox.
+> 
+> This takes effect immediately in the Europe (London) region. You can view the current sending rate and sending quota for your account on the Sending Statistics page of the Amazon SES console, or by using the GetSendQuota API.
+> 
+> As you get started with Amazon SES, keep in mind that you must:
+> 
+> - Comply with the AWS Acceptable Use Policy ( http://aws.amazon.com/aup/  ) and read the Amazon SES Service Terms (section Amazon Simple Email Service (SES) of http://aws.amazon.com/service-terms/  ).
+> 
+> - Send only high-quality emails to recipients who expect to hear from you. For more information, see https://docs.aws.amazon.com/ses/latest/dg/best-practices.html .
+> 
+> - Set up a process to handle bounces and complaints. For more information, see https://docs.aws.amazon.com/ses/latest/dg/monitor-sending-activity. html .
+> 
+> - Use your new account to send a different type of email than you are sending from your other account(s), if applicable. For more information, see http://docs.aws.amazon.com/ses/latest/DeveloperGuide/multiple-accounts.html .
+> 
+> - Use the Amazon SES mailbox simulator to test your system so that your testing does not adversely impact your account. For more information, see https://docs.aws.amazon.com/ses/latest/dg/send-an-email-from-console.html .
+> 
+> - Apply for higher sending limits before you need them. For more information, see https://docs.aws.amazon.com/ses/latest/dg/manage-sending-quotas-request-increase.html .
+> 
+> - With Amazon SES, you pay only for what you use. There are no contract negotiations and no minimum charges. For more information see: https://aws.amazon.com/ses/pricing/ 
+> 
+> Thank you for using Amazon Web Services.
+> 
+> We value your feedback. Please share your experience by rating this and other correspondences in the AWS Support Center. You can rate a  correspondence by selecting the stars in the top right corner of the correspondence.
+> 
+> Best regards,
+> Trust and Safety
+
+Sweet, sweet victory at last. 
 
 # Appendix
 
