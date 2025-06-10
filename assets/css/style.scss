@@ -1,0 +1,47 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+li a:hover {
+    font-weight: normal;
+}
+
+p a:hover {
+    font-weight: normal;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            order: 0;
+            display: none;       
+        }
+        h1 {
+            order: 2;
+        }
+        p {
+            order: 3;
+            flex-basis: 100%;
+        }
+    }
+    #posts {
+        :nth-child(n) {
+            margin-bottom: 10px;
+        }
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+#portrait {
+    max-width: 50%;
+    height: auto;
+}
+
+blockquote {
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,59 @@
+---
+layout: default
+title: Home
+---
+<h1>Posts</h1>
+<p>Below are some tutorials and posts I have written about past projects, ideas, and opinions.</p>
+<ul id="posts">
+{% for post in site.posts %}
+  <li id="post-{{ post.id }}">
+    
+    <a href="{{ post.url }}">
+      {{ post.title }}
+    </a> // 
+    <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+  </li>
+{% endfor %}
+</ul>
+
+<style>
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .row .column:first-child {
+        flex: 0 0 auto;
+    }
+    
+    .row .column:last-child {
+        flex: 1;
+    }
+    
+    #portrait {
+        max-width: 200px;
+        height: auto;
+    }
+    @media (max-width: 600px) {
+        .row {
+            display: block;
+        }
+    }
+</style>
+
+<h1>About me</h1>
+<div class="row">
+    <div class="column">
+        <img id="portrait" src="images/coffee.webp" alt="Picture of me holding coffee">
+    </div>
+    <div class="column">
+        <p>
+        I'm currently working for Crayon as a Cloud Consultant after studying at the University of Bath.
+        I enjoy writing code, making music, film photography, and making videos.
+        </p>
+        <p>
+        You can <a href="contact.html">contact me here</a>.
+        </p>
+    </div>
+</div>

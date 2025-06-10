@@ -1,0 +1,10 @@
+plugins:
+  - jekyll-seo-tag
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+remote_theme: pages-themes/minimal@v0.2.0
+title: Alex Dawkins
+logo: https://github.com/ouked.png
+description: Cloud Consultant and Software Developer.
+url: https://alex-dawkins.com
+author: Alex Dawkins
+locale: en_GB
