@@ -1,13 +1,17 @@
 ---
 layout: post
-title: "The manual photography mini-manual"
+title: "The Manual Photography Mini-Manual (with examples)"
 description: An introduction of choosing manual settings to take a photo
-date:   2026-10-06 18:38:00
+date:   2026-10-06 12:00:00
 categories: posts
+image: iceland.JPG
+cover: iceland.JPG
 tags: photography
 ---
 
-(written without the help of AI)
+![Photo of church in Reykjavik](/images/iceland.JPG)
+
+> Written without AI
 
 You've just got your new SLR: what do all the buttons and dials do?
 
@@ -55,9 +59,23 @@ So, the camera will automatically choose a shutter speed for _our_ chosen apertu
 
 # Choosing an Aperture
 
-As well as exposure, aperture affects the depth-of-field of our photograph. 
+As well as exposure, aperture affects the depth-of-field (DoF) of our photograph. 
 If we want a blurry foreground or background (called bokeh), we might choose a lower aperture like f/1.4.
+
+![A photograph with shallow DoF](/images/shallow-dof.JPG)
+> An example of a photograph with a shallow DoF: notice how the lights behind the subjects are softer.
+> The use of a flash also means that there is 
+> little motion blur due to a fast shutter speed, 
+> even though the subjects are moving.
+
 If we want more of our scene to be in focus, we can choose a smaller aperture (larger number, like f/22).
+
+![A photograph with larger DoF](/images/large-dof.jpg)
+> And an example of a photograph with a larger DoF: the subjects _and_ the background are (mostly!) in focus.
+> This was taken in bright daylight, 
+> so there was lots of light 
+> to allow for a smaller aperture 
+> and a quick shutter speed.
 
 # Compromising
 
@@ -73,6 +91,9 @@ If we don't want a blurry photo, we have a few options:
    This is 2 stops away, so we need to open our aperture by 2 stops to f/8.
 2. Don't hold the camera - use a tripod or a stable surface.
 3. Introduce more light to the scene - either by moving to an area with more light.
+
+![A photograph with motion blur](/images/motion-blur.JPG)
+> This photograph has a lot of motion blur: I should have kept the camera steadier.
 
 # The final side of the Exposure Triangle
 
@@ -109,7 +130,7 @@ Most of the time, I have my camera set to f/8.0,
 and will only change this if the shutter speed needs to be faster than the camera can move it,
 or below 1/250 (or 1/125 if I'm feeling particularly steady-handed).
 
-# Practicing with a digital camera.
+# Practicing with a digital camera
 
 If you're new to manual photography, try practicing with a DSLR or even your phone in manual mode. 
 Digital cameras also use aperture, shutter speed, and ISO: and have the advantage of the option of adjusting your ISO.

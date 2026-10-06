@@ -8,3 +8,6 @@ description: DevOps and Software Engineer.
 url: https://alex-dawkins.com
 author: Alex Dawkins
 locale: en_GB
+sass:
+  quiet_deps: true
+  silence_deprecations: [import]
