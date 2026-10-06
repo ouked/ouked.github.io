@@ -90,7 +90,7 @@ If we don't want a blurry photo, we have a few options:
 1. Increase our shutter speed (probably to at least 1/250). 
    This is 2 stops away, so we need to open our aperture by 2 stops to f/8.
 2. Don't hold the camera - use a tripod or a stable surface.
-3. Introduce more light to the scene - either by moving to an area with more light.
+3. Introduce more light to the scene: either by moving to an area with more light, or using a flash.
 
 ![A photograph with motion blur](/images/motion-blur.JPG)
 > This photograph has a lot of motion blur: I should have kept the camera steadier.
@@ -107,7 +107,7 @@ Each film has a set ISO sensitivity, so it's not a very convenient member of the
 to keep in mind when you next buy film: a film with a higher ISO will be able to shoot in slightly darker scenarios, 
 giving you more flexibility with aperture and shutter speed.
 
-# Making decision
+# Making a decision
 
 Now we know how to take a well-exposed photo, we can focus on using aperture and shutter speed to take good photos that 
 aren't only well-exposed, but also visually interesting.
